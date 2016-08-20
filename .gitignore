@@ -1,2 +1,6 @@
 .gitignore
+.sass-cache
+.dot-dot
 .DS_store
+one.css
+one.css.map

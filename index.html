@@ -11,7 +11,7 @@
 	</style>
 </head>
 <body style="padding:0;">
-
+<!-- I hope you don't bring code like this home to your mother mister... -->
 
 <ul id="menu" style="position:fixed; z-index:9939393; right:0%; bottom:100px">
 	<li data-menuanchor="menu-1" id="i"><a href="#i">quote klap</a></li>
@@ -101,6 +101,8 @@
 		<i>"the mistake most make is thinking that the thoughts we think are in our heads"</i>
 	</div>
 
+  <!-- thinking in tenses are one of the many culprits that distracts you from the now -->
+
   <div class="section" style="background:url('media/img/all-brothers.jpg') 0 top;  ">
     <i>"the man who pressed his brother down, became depressed himself"</i>
   </div>
@@ -140,14 +142,13 @@
 		<small style="font-size:0.3em; line-height: 100%; "> the 021 clamours with pride to her progeny</small><br/><br/>
 
 
-		<small> visuals LINDSEY APPOLIS&nbsp;<br />
-     &nbsp;beats HASHFINGER&nbsp;<br />
-		 &nbsp;words HUGH MOSNO&nbsp;<br />
-     &nbsp;web THEMETICUS&nbsp;<br />
+		<small> visuals <a href="https://twitter.com/appster01" target="_blank">LINDSEY APPOLIS</a>&nbsp;<br />
+     &nbsp;beats <a href="https://twitter.com/hashfinger" target="_blank">HASHFINGER</a>&nbsp;&amp;&nbsp;<a href="https://twitter.com/fokofband" target="_blank">FOKOFPOLISIEKAR</a>&nbsp;<br />
+		 &nbsp;words &amp; web HUGH MOSNO&nbsp;<br />
 
     </small>
 
-		<tiny style="font-size:0.3em; line-height: 100%; background:transparent"> heavy ge'koppel with <br/><a href="https://themeticus.github.io/onelove" target="_blank" style="background:transparent"><img src="media/img/soema-one-love.png" width="20px"  style="background:transparent"/></a></tiny>
+		<tiny style="font-size:0.3em; line-height: 100%; background:transparent"> s/o to aunty nina and uncle b <br/> heavy ge'koppel with <br/><a href="https://themeticus.github.io/onelove" target="_blank" style="background:transparent"><img src="media/img/soema-one-love.png" width="20px"  style="background:transparent"/></a></tiny>
 
      <button id="addSongs" style="display:none">load theme songs</button>
 	</div>
@@ -976,17 +977,14 @@ window.AP = AudioPlayer;
 })(window);
 
 // TEST: image for web notifications
-var iconImage = '';
+var iconImage = 'media/img/favicon.png';
 
 AP.init({
   playList: [
    {'icon': iconImage, 'title': 'Nina Simone - Baltimore', 'file': 'media/bts/nina-simone-baltimore.mp3'},
-    /*{'icon': iconImage, 'title': 'Hashfinger - Low Down', 'file': 'media/bts/hashfinger-low-down.mp3'},
-    {'icon': iconImage, 'title': 'Hashfinger - A7.May12', 'file': 'media/bts/hashfinger-a7-may12.mp3'},
-    {'icon': iconImage, 'title': 'Hashfinger - A1.June12', 'file': 'media/bts/a1-june-12.mp3'},
-    {'icon': iconImage, 'title': 'Hashfinger - A3.May12', 'file': 'media/bts/a3-may12.mp3'},*/
-    {'icon': iconImage, 'title': 'Hashfinger - A1.November11', 'file': 'media/bts/a1-november11.mp3'}
-     
+    {'icon': iconImage, 'title': 'Hashfinger - A1.November11', 'file': 'media/bts/a1-november11.mp3'},
+    {'icon': iconImage, 'title': 'Bob Marley - Concrete Jungle', 'file': 'media/bts/bob-marley-concrete-jungle.mp3'},
+    {'icon': iconImage, 'title': 'Fokofpolisiekar - Hemel Op Die Platteland', 'file': 'media/bts/fokofpolisiekar-hemel-op-die-platteland.mp3'}     
   ]
 });
 
@@ -995,8 +993,6 @@ document.getElementById('addSongs').addEventListener('click', function(e) {
   e.preventDefault();
   console.log(AP);
   AP.update([
-    {'icon': iconImage, 'title': 'Nina Simone - Baltimore', 'file': 'media/bts/nina-simone-baltimore.mp3'},
-    {'icon': iconImage, 'title': 'Bob Marley - Concrete Jungle', 'file': 'media/bts/bob-marley-concrete-jungle.mp3'},
     {'icon': iconImage, 'title': 'Fokofpolisiekar - Hemel Op Die Platteland', 'file': 'media/bts/fokofpolisiekar-hemel-op-die-platteland.mp3'}
   ]);
 })

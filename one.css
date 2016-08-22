@@ -16,6 +16,12 @@
   line-height: normal;
   font-family: monospace; }
 
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
 i, small {
   font-size: 0.4em;
   text-align: left;
